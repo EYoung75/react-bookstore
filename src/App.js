@@ -1,25 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header.jsx";
+import SearchBar from "./components/SearchBar.jsx";
+import Checkout from "./components/Checkout.jsx";
+import BookList from "./components/Booklist.jsx";
 
 class App extends Component {
+
+  state = {
+    books: []
+  }
+
+  async componentDidMount() {
+    const response = await fetch(`http://localhost:8082/api/books`)
+    const json = await response.json()
+    this.setState({books: json})
+  }
+
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Header />
+        <div className="row">
+          <div className="col-8">
+            <SearchBar />
+            <div className="row">
+              <BookList books={this.state.books}/>
+            </div>
+          </div>
+          <div className="col-4">
+            <Checkout />
+          </div>
+        </div>
       </div>
     );
   }
