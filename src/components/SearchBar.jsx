@@ -14,9 +14,11 @@ class SearchBar extends React.Component {
                     </div>
                     <div className="col-4">
                         <h5>Filter:</h5>
-                        <select>
-                            <option>By Author: (A-Z)</option>
-                            <option>By Title: (A-Z)</option>
+                        <select onChange={this.props.filter}>
+                            <option value="authorA">By Author: (A-Z)</option>
+                            <option value="authorZ">By Author: (Z-A)</option>
+                            <option value="titleA">By Title: (A-Z)</option>
+                            <option value="titleZ">By Title: (Z-A)</option>
                         </select>
                     </div>
                 </div >

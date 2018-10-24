@@ -10,8 +10,8 @@ class Booklist extends React.Component {
                     <li key={book.title}>
                         <h4><u>{book.title}:</u></h4>
                         <h6>{book.subtitle}</h6>
-                        <p>•By {book.author} | {book.pages}pages | price-${book.price}</p>
-                        <AddButton />
+                        <p>•By {book.author} | {book.pages} pages | price -${book.price}</p>
+                        <AddButton title={book.title} add={this.props.add}/>
                     </li>
 
             )
@@ -20,7 +20,7 @@ class Booklist extends React.Component {
         return (
             <div className="container">
                 <h1><u>Current Books:</u></h1>
-                <ol>{books}</ol>
+                <ol className="books">{books}</ol>
             </div>
 
         )

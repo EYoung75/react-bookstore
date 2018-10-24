@@ -13,6 +13,7 @@
     background-color: #F49F05;
     height: 3rem;
     font-family: 'Merriweather', serif;
+    padding-left: 1rem;
 }
 
 .header {
@@ -43,4 +44,16 @@ input {
     font-family: 'Merriweather', serif;
 }
 
+.books {
+    padding: 1rem;
+}
 
+.cart {
+    padding: 1rem;
+}
+
+.checkoutButtons {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
