@@ -72,7 +72,11 @@ class App extends Component {
   }
 
   ordered = (e) => {
-    window.alert("Your books are magically on the way")
+    if(this.state.booksInCart == 0) {
+      window.alert("Your shopping cart is empty!")
+    } else {
+      window.alert("Your books are magically on the way")
+    }
   }
   
 
