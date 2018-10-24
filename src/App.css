@@ -1,32 +1,46 @@
-.App {
-  text-align: center;
+.checkout {
+    background-color: #36688D;
+    height: auto;
+    padding: 1rem;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column-reverse;
+    border: solid black 2px;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.footer {
+    background-color: #F49F05;
+    height: 3rem;
+    font-family: 'Merriweather', serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    background-color: #F18904;
+    width: 100vw;
+    font-family: 'Merriweather', serif;
+
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+    padding: 1.5rem;
+    background-color: #36688D;
+    border-left: solid, 2px black;
+    border-top: solid, 2px black;
+    border-right: none;
+    border-bottom: solid, 2px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    padding-left: 15px;
+    height: 2rem;
+    width: 15rem;
 }
+
+.booklist {
+    height: auto;
+    padding: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+
