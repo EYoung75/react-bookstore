@@ -11,9 +11,10 @@
 
 .footer {
     background-color: #F49F05;
-    height: 3rem;
+    height: 4rem;
     font-family: 'Merriweather', serif;
     padding-left: 1rem;
+    padding-top: 1rem;
 }
 
 .header {
@@ -57,3 +58,8 @@ input {
     display: flex;
     justify-content: space-between;
 }
+
+span {
+    padding-right: .5rem;
+}
+
